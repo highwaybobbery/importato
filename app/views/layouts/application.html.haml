@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title Deal-A-Day
+    = stylesheet_link_tag 'application', media: 'all'
+    = csrf_meta_tags
+  %body
+    = render 'shared/navigation'
+    = render 'shared/flash'
+    = yield

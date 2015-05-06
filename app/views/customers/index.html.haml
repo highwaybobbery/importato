@@ -1,0 +1,11 @@
+%h1 Listing customers
+
+%table
+  %thead
+    %tr
+      %th Name
+
+  %tbody
+    - @customers.each do |customer|
+      %tr
+        %td= customer.name

@@ -1,0 +1,7 @@
+%h1 Import Transactions
+%h4 Select a properly formatted csv file of transactions to continute
+
+= form_for 'import', url: import_path, method: 'post' do |f|
+  %p= f.file_field(:file)
+  = f.submit('Import Data')
+

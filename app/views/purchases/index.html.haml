@@ -1,0 +1,19 @@
+%h1 Listing purchases
+
+%table
+  %thead
+    %tr
+      %th Customer
+      %th Merchant
+      %th Item
+      %th Quantity
+      %th Total
+
+  %tbody
+    - @purchases.each do |purchase|
+      %tr
+        %td= purchase.customer
+        %td= purchase.merchant
+        %td= purchase.item
+        %td= purchase.quantity
+        %td= purchase.total

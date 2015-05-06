@@ -1,0 +1,6 @@
+%h1 Welcome to the Deal-a-Day data migration tool
+- if current_user
+  %p You can now import your data!
+  = link_to 'Import your file', new_import_path
+- else
+  %p== Please #{ link_to 'sign in with your GitHub account', login_path }.

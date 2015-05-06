@@ -1,0 +1,13 @@
+%h1 Listing merchants
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Address
+
+  %tbody
+    - @merchants.each do |merchant|
+      %tr
+        %td= merchant.name
+        %td= merchant.address

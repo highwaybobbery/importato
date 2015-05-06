@@ -1,0 +1,9 @@
+- if current_user
+  = link_to 'Sign out', logout_path
+- else
+  = link_to 'Sign in', login_path
+| #{link_to 'Home', root_path}
+- if current_user
+  | #{link_to 'Import', new_import_path}
+| #{link_to 'Customers',customers_path} | #{link_to 'Items', items_path}
+| #{link_to 'Merchants', merchants_path} | #{link_to 'Purchases', purchases_path}
